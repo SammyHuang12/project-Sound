@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+  	  	<meta charset="UTF-8" />
+  	  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	  	<title>首頁 | Sound</title>
+  	</head>
+	<body>
+    <%- include('./layout/header'); -%>
+    <main >
+		<section class="banner">
+			<div class="position-relative mx-lg-0">
+				<div class="swiper banner-swiper">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 576px)" srcset="../assets/images/home-banner-sm-1.jpg">
+								<img src="../assets/images/home-banner-1.jpg" alt="banner logo" class="w-100">
+							</picture>
+						</div>
+						  <div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 576px)" srcset="../assets/images/home-banner-sm-2.jpg">
+								<img src="../assets/images/home-banner-2.jpg" alt="banner logo" class="w-100">
+							</picture>
+						</div>
+						  <div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 576px)" srcset="../assets/images/home-banner-sm-3.jpg">
+								<img src="../assets/images/home-banner-3.jpg" alt="banner logo" class="w-100">
+							</picture>
+						</div>
+					</div>				
+				  </div>
+				<div class="banner-slogan top-50 start-50 translate-middle container py-8 ps-lg-9 position-absolute text-white d-flex flex-column align-items-center align-items-lg-start">
+					<p class="fs-3 fs-lg-1 fw-bolder mb-4 mb-lg-5">不必最大，但要最好</p>
+					<h6 class="fs-16 fs-lg-5 mb-1 mb-lg-2 fw-bold">The Best, But Not Necessarily The Largest</h6>
+				</div>					
+			</div>
+		</section>
+
+<!-- 
+    <h1 class="index-title">我是首頁</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+    <div class="card" style="width: 18rem">
+      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
+      <div class="card-body">
+        <h5 class="card-title">卡片元件</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
+          nobis earum!
+        </p>
+      </div>
+    </div> -->
+
+    <!-- Modal 按鈕 -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      打開 modal
+    </button> -->
+
+    <!-- Modal 元件 -->
+    <!-- <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">內容</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  	</main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

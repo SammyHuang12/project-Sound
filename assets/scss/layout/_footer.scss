@@ -1,0 +1,25 @@
+.footer{
+ 
+
+	@include pad(){
+	  // border-radius:48px  48px  0px  0px;
+	}
+
+	line-height: 18px;
+
+
+	a{
+	  line-height: 20px;
+	}
+
+}
+
+.social{
+  	img{
+  	  width: 48px;
+	  
+	  @include mobile(){
+		// width: 24px;
+	  }
+  	}
+}	

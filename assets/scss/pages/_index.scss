@@ -1,0 +1,17 @@
+.index-title {
+  font-size: 100px;
+}
+
+.banner{
+	&-swiper {
+  		img{
+    		object-fit: cover;
+  		}
+	}
+
+	&-slogan{
+		z-index: 10;
+	}
+
+}
+  
