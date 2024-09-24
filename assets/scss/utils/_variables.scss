@@ -421,6 +421,11 @@ $prefix:                      $variable-prefix !default;
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+
+//自訂
+// $gradient: linear-gradient(143deg,rgba($secondary, .15), rgba($white, 0)) !default;
+//end 自訂
+
 // scss-docs-end variable-gradient
 
 // Spacing
@@ -736,7 +741,10 @@ $headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        600 !default;
+
+//標題行高
 $headings-line-height:        1.2 !default;
+
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables
 
@@ -1024,11 +1032,7 @@ $input-border-color:                    var(--#{$prefix}border-color) !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      var(--#{$prefix}box-shadow-inset) !default;
 
-// $input-border-radius:                   var(--#{$prefix}border-radius) !default;
-
-//自訂 input 圓角
-$input-border-radius:                   1rem !default;
-//end 自訂
+$input-border-radius:                   var(--#{$prefix}border-radius) !default;
 
 $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg:                var(--#{$prefix}border-radius-lg) !default;
@@ -1791,7 +1795,7 @@ $figure-caption-color:              var(--#{$prefix}secondary-color) !default;
 // scss-docs-end figure-variables
 
 
-// Breadcrumbs
+// Breadcrumbs 麵包屑
 
 // scss-docs-start breadcrumb-variables
 $breadcrumb-font-size:              null !default;
@@ -1801,7 +1805,12 @@ $breadcrumb-item-padding-x:         .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+// $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
+
+//自訂
+$breadcrumb-active-color:           $primary !default;
+//end 自訂
+
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;

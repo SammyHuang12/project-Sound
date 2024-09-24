@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
-    <%- include('./layout/footer'); -%>
+  	<head>
+  	  	<meta charset="UTF-8" />
+  	  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	  	<title>聯絡我們 | Sound</title>
+  	</head>
+  	<body>
+  	  	<%- include('./layout/header'); -%>
+  	  	<main>
+			<section>
+				<div class="position-relative mx-lg-0 banner">
+					<picture class=" ">
+						<source media="(min-width: 992px)" srcset="../assets/images/contact.jpg">
+						<img src="../assets/images/contact-sm.jpg" alt="contact-banner logo" class="w-100">
+					</picture>
+					<div class="banner-slogan top-50 start-50 translate-middle container py-8 ps-lg-9 position-absolute text-white d-flex flex-column align-items-center">
+						<p class="fs-4 fs-lg-2 fw-bolder mb-4 mb-lg-5">免費諮詢，量身打造您專屬的行銷策略</p>
+					</div>					
+				</div>
+			</section>
+  	    	<section class="pt-60 pb-80 bg-secondary">
+  	    	  	<nav aria-label="breadcrumb" class="container">
+  	    	  		<ol class="breadcrumb">
+  	    	    		<li class="breadcrumb-item"><a href="index.html" class="fs-md-16 fs-14">首頁</a></li>
+  	    	    		<li class="breadcrumb-item active fs-md-16 fs-14" aria-current="page">聯絡我們</li>
+  	    	  		</ol>
+  	    		</nav>
+				<div class="container">
+					<h1 class="my-md-32 my-24 title ps-16 fs-5 fs-md-2">聯絡我們</h1>
+					<div class="row justify-content-center">
+						<div class="col-xl-6 col-lg-10 col-12">
+							<h3 class="fs-md-3 fs-6 fw-bold text-primary-dark text-center mb-6 mb-md-40">聯絡我們</h3>
+							<div class="contactUs-info mx-auto">
+								<p class="fs-6 mb-24">我們相當重視您的意見，若您有任何疑問，請填妥以下資料，我們會在近期與您聯繫。</p>
+								<form action="index.html" method="post" class="form-info">
+									<div class="d-flex flex-column mb-16">
+										<label for="name">姓名</label>
+										<input type="text" name="name" id="name" placeholder="陳小明" class="fs-16 mt-8 form-control">
+									</div>
+									 <div class="d-flex flex-column mb-16">
+										<label for="tel">聯絡電話</label>
+										<input type="tel" name="tel" id="tel" placeholder="0912-345-678" class="fs-16 mt-8 form-control">
+									</div>
+									<div class="d-flex flex-column mb-16">
+										<label for="email">電子郵件</label>
+										<input type="email" name="email" id="email" placeholder="example@email.com" class="fs-16 mt-8 form-control">
+									</div>
+									<div class="d-flex flex-column mb-16">
+										<label for="feedback">意見反應</label>
+										<textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="請輸入您的意見" class="fs-16 mt-8 form-control"></textarea>								
+									</div>
+									<div class="mb-48 mb-sm-3 d-flex align-items-center">
+										<input type="checkbox" name="agree" id="agree" class="me-8">
+										<label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+									</div>
+									<div class="button mx-auto">
+										<a href="#" class=" btn btn-l btn-primary blow-up blow-up-m mx-auto">確認送出</a>
+									</div>							
+								</form>
+							</div>
+						</div>
+					</div>					
+				</div>				
+  	    	</section>
+			<section class="container py-12 my-80">
+				<div class="row">					
+					<div class="col-lg-5 mb-24 mb-lg-0">
+						<div class="card">
+							<div class="row row-cols-lg-1 row-cols-1 row-cols-md-2">
+								<div class="col">
+									<img src="../assets/images/office-2.jpg" class="card-img-top object-fit-cover h-100" alt="office logo">
+								</div>
+								<div class="col">								
+									<div class="card-header px-24">
+							  			<h5 class="fw-normal lh-base">台北辦公室</h5>
+									</div>
+									<div class="card-body px-24">
+										<ul class="py-2 px-3 d-flex flex-column  h-full list-unstyled gap-8">
+											<li>
+												<a class="fs-6 d-flex align-items-center mb-1" href="tel:886+ 2 2558 0138">
+													<span class="material-symbols-outlined me-8">call</span>電話：886+ 2 2558 0138
+												</a>
+											</li>
+											<li>
+												<p class="fs-6 d-flex align-items-center mb-1">
+													<span class="material-symbols-outlined me-8">schedule</span>營業時間：10:30-17:30
+												</p>
+											</li>
+											<li>
+												<p class="fs-6 d-flex align-items-start">
+													<span class="material-symbols-outlined me-8">location_on</span>地址：台北市大同區103承德路一段17號19樓之2(請搭左側高樓層電梯)
+												</p>
+											</li>
+										</ul>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="rounded overflow-hidden w-100 h-100 map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.528303992978!2d121.51704297512416!3d25.050077021442153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96da7fbee7b%3A0x64b58d6b3f694d9b!2zMTAz5Y-w5YyX5biC5aSn5ZCM5Y2A5om_5b636Lev5LiA5q61MTfomZ8xOSDkuYsgMg!5e0!3m2!1szh-TW!2stw!4v1727064935283!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>						
+					</div>
+				</div>
+			</section>
+  	  	</main>
+  	  
+  	  <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+  	  <script type="module" src="../main.js"></script>
+  	</body>
 </html>

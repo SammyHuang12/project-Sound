@@ -38,3 +38,28 @@
 .blow-up-s:hover{
     transform: scale(1.05);
 }
+//end 
+
+.btn {
+    background: $primary;
+    color: #fff;
+    font-size: 20px;
+    text-align: center
+}
+
+.btn-s {
+    width: 104px;
+    padding: 6px 0;
+    font-weight: 500
+}
+
+.btn-l {
+    width: 416px;
+    font-weight: 700;
+    padding: 12px 0
+}
+
+.gradient{
+    background: linear-gradient(to bottom, $secondary, $white);
+}
+
