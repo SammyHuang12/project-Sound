@@ -40,23 +40,31 @@
 }
 //end 
 
-.btn {
+//btn  
+.btn{
     background: $primary;
-    color: #fff;
-    font-size: 20px;
-    text-align: center
-}
-
-.btn-s {
-    width: 104px;
-    padding: 6px 0;
-    font-weight: 500
-}
-
-.btn-l {
-    width: 416px;
-    font-weight: 700;
-    padding: 12px 0
+    color: $white;    
+    font-size: $h6-font-size;
+    text-align: center;
+    &-s{
+        width: 104px;
+        padding: 6px 0;
+        font-weight: 500;
+    }
+    &-l{
+        width: 416px;
+        font-weight: bold;
+        padding: 12px 0;
+        
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    &-b{
+        background: $black;
+        padding: 16px 0;
+        width: 100%;
+    }
 }
 
 .gradient{
