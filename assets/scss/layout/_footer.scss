@@ -1,17 +1,15 @@
 .footer{
- 
-
-	@include pad(){
-	  // border-radius:48px  48px  0px  0px;
+ 	.company-logo{
+		@include mobile(){
+			max-height: $c-logo * 0.7;
+		}
 	}
 
 	line-height: 18px;
 
-
 	a{
 	  line-height: 20px;
 	}
-
 }
 
 .social{

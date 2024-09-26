@@ -1,4 +1,3 @@
-
 .contact>.banner::before{
 	position: absolute;
 	content:'';
@@ -8,6 +7,9 @@
 }
 .title{
 	border-left: 8px solid $primary;	
+}
+.form-control::placeholder{
+	opacity: 0.2;
 }
 
 .form-control:focus{
