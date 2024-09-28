@@ -1,10 +1,3 @@
-.contact>.banner::before{
-	position: absolute;
-	content:'';
-	width: 100%;
-	height: 100%;
-	background: rgba(115, 38, 30, 0.35);
-}
 .title{
 	border-left: 8px solid $primary;	
 }
@@ -53,7 +46,6 @@
 		border-bottom-left-radius: var(--bs-card-inner-border-radius);
 		border-bottom-right-radius: var(--bs-card-inner-border-radius);
 	}
-
 
 	.map{
 		min-height: 414px;

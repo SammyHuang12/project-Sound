@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>公司簡介 | Sound</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
-    <%- include('./layout/footer'); -%>
+    <head>
+      	<meta charset="UTF-8" />
+      	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      	<title>公司簡介 | Sound</title>
+    </head>
+    <body>
+      	<%- include('./layout/header'); -%>
+      	<main class="about">
+      	  	<section>
+	  			<div class="position-relative mx-lg-0 banner">
+	  				<picture class=" ">
+	  					<source media="(min-width: 992px)" srcset="../assets/images/about.jpg">
+	  					<img src="../assets/images/about-sm.jpg" alt="contact-banner logo" class="w-100">
+	  				</picture>
+	  				<div class="banner-slogan top-50 start-50 translate-middle container py-8 ps-lg-9 position-absolute text-white d-flex flex-column align-items-center">
+	  					<p class="fs-4 fs-sm-2 fw-bolder mb-4 mb-lg-5">不必最大，但要最好</p>
+	  				</div>					
+	  			</div>
+	  		</section>
+			<section class="pt-lg-60 pb-lg-80 py-40">
+				<nav aria-label="breadcrumb" class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html" class="fs-md-16 fs-14">首頁</a></li>
+					  	<li class="breadcrumb-item active fs-md-16 fs-14" aria-current="page">公司簡介</li>
+					</ol>
+			  	</nav>
+				<div class="container">
+					<h1 class="my-md-48 my-24 fs-5 fs-md-1 text-center text-primary-dark">公司簡介</h1> 
+					<div class="row mb-24 mb-lg-60">
+						<div class="col-lg-6">
+							<picture class="about-pic d-block h-100 mx-n12 mx-md-0">
+								<source media="(min-width: 992px)" srcset="../assets/images/about-1.jpg">
+								<img src="../assets/images/about-1-sm.jpg" alt="contact-banner logo" class="w-100 h-100 object-fit-cover ">
+							</picture>
+						</div>
+						<div class="col-lg-6">
+							<div class="card border-0">
+								<div class="card-body border-0 px-lg-40 px-12 py-24 py-lg-0">
+								  <h3 class="card-title mb-md-24 mb-16 fs-5 fs-md-3">關於商淂</h3>
+								  <p class="card-text mb-40">成立於2004年一月的商淂是由一群資深的市場研究夥伴基於“不必最大, 但要最好”的共同理念真心誠意而建立的</p>
+								  <p class="card-text">同仁為經驗豐富的專業市調管理者，研究範圍遍及全省，於台北、台中、高雄皆設有據點，提供全方位的市場研究服務，以協助客戶制定成功的行銷策略。我們以堅持優越的市調品質、深入對本地市場的深入瞭解，為客戶提供精闢的市場透視及協助客戶制定成功的市場策略。</p>
+								</div>
+							  </div>
+						</div>
+					</div>
+					<div class="row d-flex flex-row-reverse">
+						<div class="col-lg-6 ">
+							<picture class="about-pic d-block h-100 mx-n12 mx-md-0">
+								<source media="(min-width: 992px)" srcset="../assets/images/about-2.jpg">
+								<img src="../assets/images/about-2-sm.jpg" alt="contact-banner logo" class="w-100 h-100 object-fit-cover ">
+							</picture>
+						</div>
+						<div class="col-lg-6 ">
+							<div class="card border-0">
+								<div class="card-body border-0 px-lg-40 px-12 py-24 py-lg-0">
+								  <h3 class="card-title mb-md-24 mb-16 fs-5 fs-md-3">商淂的文化及信念</h3>
+								  <ul class="card-text d-grid gap-8">
+									<li>保持客戶的業務機密是最基本的倫理</li>
+									<li>我們重視的是和客戶維持常常久久的良好關係而非一時的利益</li>
+									<li>持續進行的業務比突然的一個大案子更有價值</li>
+									<li>當客戶的夥伴，和客戶一起成長</li>
+								  </ul>
+								</div>
+							  </div>
+						</div>
+					</div>					
+				</div>				
+		  </section>
+      	</main>
+      	<%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      	<script type="module" src="../main.js"></script>
+    </body>
 </html>

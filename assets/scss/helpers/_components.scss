@@ -18,12 +18,21 @@
     align-items: center;
 }
 
- .company-logo{   
+.company-logo{   
     max-height: $c-logo;
 
     @include mobile(){
         max-height: $c-logo * 0.75;
     }
+}
+
+//banner
+.banner::before{
+	position: absolute;
+	content:'';
+	width: 100%;
+	height: 100%;
+	background: rgba(115, 38, 30, 0.35);
 }
 
 //放大動畫
