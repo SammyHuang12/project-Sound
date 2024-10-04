@@ -8,75 +8,66 @@
   	</head>
 	<body>
     <%- include('./layout/header'); -%>
-    <main >
-		<section class="home-banner">
-			<div class="position-relative mx-lg-0">
-				<div class="swiper banner-swiper">
+    <main>
+		<section class="home-banner position-relative">
+			<div class="position-absolute top-0 start-0 w-100 h-100 z-n1">
+				<div class="swiper w-100 h-100 ">
 					<div class="swiper-wrapper">
 						<!-- Slides -->
 						<div class="swiper-slide">
-							<picture>
-								<source media="(min-width: 767px)" srcset="../assets/images/home-banner-1.jpg">
-								<img src="../assets/images/home-banner-sm-1.jpg" alt="banner logo" class="w-100">
-							</picture>
+							<img src="../assets/images/home-banner-1.jpg" alt="banner logo" class=" object-fit-cover w-100 h-100">
 						</div>
-						  <div class="swiper-slide">
-							<picture>
-								<source media="(min-width: 767px)" srcset="../assets/images/home-banner-2.jpg">
-								<img src="../assets/images/home-banner-sm-2.jpg" alt="banner logo" class="w-100">
-							</picture>
+						<div class="swiper-slide">
+							<img src="../assets/images/home-banner-2.jpg" alt="banner logo" class="  object-fit-cover w-100 h-100">
 						</div>
-						  <div class="swiper-slide">
-							<picture>
-								<source media="(min-width: 767px)" srcset="../assets/images/home-banner-3.jpg">
-								<img src="../assets/images/home-banner-sm-3.jpg" alt="banner logo" class="w-100">
-							</picture>
+						<div class="swiper-slide">
+							<img src="../assets/images/home-banner-3.jpg" alt="banner logo" class="  object-fit-cover w-100 h-100">
 						</div>
 					</div>				
-				  </div>
-				<div class="home-banner-slogan top-50 start-50 translate-middle container py-8 ps-lg-9 position-absolute text-white d-flex flex-column align-items-center align-items-lg-start">
-					<h1 class="fs-5 fs-lg-64 fw-bolder mb-4 mb-lg-5">不必最大，但要最好</h1>
-					<h6 class="fs-16 fs-lg-3 mb-1 mb-lg-2">The Best, But Not Necessarily The Largest</h6>
-				</div>					
+				</div>
 			</div>
+			<div class="home-banner-slogan container text-white d-flex flex-column align-items-center align-items-lg-start">
+				<h1 class="fs-4 fs-md-2 fs-lg-64 fw-bolder mb-4 mb-lg-5">不必最大，但要最好</h1>
+				<h6 class="fs-16 fs-md-5 fs-lg-3 mb-1 mb-lg-2">The Best, But Not Necessarily The Largest</h6>
+			</div>			
 		</section>
-    <section class="py-lg-80 py-40">
-		<div class="container">
-			<h2 class="mb-lg-40 mb-32 fs-5 fs-md-1 text-center text-primary-dark">用專業的心，做專業的事</h2>
-			<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-32">
-				<div class="col">
-					<div class="card border-0 d-flex flex-column align-items-center">
-						<img src="../assets/images/circle_1.png" class="w-40 mb-8" alt="circle_1 logo">
-						<div class="card-body border-0">
-						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">效益</h4>
-						  <p class="card-text text-center fs-md-6 fs-16">協助客戶了解客層分布及消費習慣</p>
+    	<section class="py-lg-80 py-40">
+			<div class="container">
+				<h2 class="mb-lg-40 mb-32 fs-5 fs-md-1 text-center text-primary-dark">用專業的心，做專業的事</h2>
+				<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-32">
+					<div class="col">
+						<div class="card border-0 d-flex flex-column align-items-center">
+							<img src="../assets/images/circle_1.png" class="mb-8" alt="circle_1 logo">
+							<div class="card-body border-0">
+							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">效益</h4>
+							  <p class="card-text text-center fs-md-6 fs-16">協助客戶了解客層分布及消費習慣</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="card border-0 d-flex flex-column align-items-center">
-						<img src="../assets/images/circle_2.png" class="w-40 mb-8" alt="circle_2 logo">
-						<div class="card-body border-0">
-						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">及時</h4>
-						  <p class="card-text text-center fs-md-6 fs-16">在時限內提供專業的行銷研究</p>
+					<div class="col">
+						<div class="card border-0 d-flex flex-column align-items-center">
+							<img src="../assets/images/circle_2.png" class="mb-8" alt="circle_2 logo">
+							<div class="card-body border-0">
+							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">及時</h4>
+							  <p class="card-text text-center fs-md-6 fs-16">在時限內提供專業的行銷研究</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="card border-0 d-flex flex-column align-items-center">
-						<img src="../assets/images/circle_3.png" class="w-40 mb-8" alt="circle_3 logo">
-						<div class="card-body border-0">
-						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">保密</h4>
-						  <p class="card-text text-center fs-md-6 fs-16">以保密協議書保護該產品概念的商業價值</p>
+					<div class="col">
+						<div class="card border-0 d-flex flex-column align-items-center">
+							<img src="../assets/images/circle_3.png" class="mb-8" alt="circle_3 logo">
+							<div class="card-body border-0">
+							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">保密</h4>
+							  <p class="card-text text-center fs-md-6 fs-16">以保密協議書保護該產品概念的商業價值</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-    </section>
+    	</section>
 
 
-    <h1 class="index-title">我是首頁</h1>
+    <!-- <h1 class="index-title">我是首頁</h1>
     <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
@@ -97,7 +88,7 @@
           nobis earum!
         </p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal 按鈕 -->
     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

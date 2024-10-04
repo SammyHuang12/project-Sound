@@ -1,11 +1,16 @@
-.index-title {
-  font-size: 100px;
-}
-
 .home-banner{
-
+	
 	&-slogan{
-		z-index: 10;
+		
+		padding: 240px 12px;
+
+		@include pad(){
+			padding: 192px 12px;
+		}
+
+		@include sm-mobile(){
+			padding: 128px 12px;
+		}
 	}
 
 }

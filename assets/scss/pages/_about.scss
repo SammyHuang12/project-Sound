@@ -7,4 +7,52 @@
 			border-radius: 50px 0 50px 0;
 		}
 	}
+
+	.map{
+		@include mobile(){
+			max-width: 50%;
+		}
+	}
+
+	.left-text, .right-text{
+		position: absolute;
+	}
+
+	.left-text{
+		top:15%;
+		left:calc(50% - 400px);
+
+		@include pad(){
+			left:12px;
+		}
+	}
+	.right-text{
+		top:40%;
+		right:calc(50% - 450px);
+
+		@include pad(){
+			right: 12px;
+		}
+	}
 }
+
+.team{
+	.pic{
+		max-width: 150px;
+
+		@include mobile(){
+			max-width: 100px;
+		}
+	}
+
+	.card{
+		border: unset;
+		border-radius: unset;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.175);
+	}
+
+	& .col-xl-10.col-12:last-child .card{
+		border-bottom: unset;
+	}
+}
+
