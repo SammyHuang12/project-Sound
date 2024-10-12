@@ -6,41 +6,41 @@
 	.form-control::placeholder{
 		opacity: 0.2;
 	}
-	
+
 	.form-control:focus{
 		background: unset;
 	}
-	
+
 	.form-info input, .form-info textarea {
 	    padding: 6px 12px;
 	    background: #fbf2f2;
 	    border: 1px solid #000000
 	}
-	
-	.button{
-		overflow: hidden;
-		border-radius: 6px;
-		max-width: 416px;
-	}
-	
+
+	// .button{
+	// 	overflow: hidden;
+	// 	border-radius: 6px;
+	// 	max-width: 416px;
+	// }
+
 	.card-img-top{
 		min-height: 224px;
 	}
 	.map{
 		width: 100%;
 	}
-	
-	
-	
+
+
+
 	@include pad(){
 		.card{
 			border:0;
 		}
-	
+
 		.card-header, .card-body{
 			border: var(--bs-card-border-width) solid var(--bs-card-border-color);
 		}
-	
+
 		.card-body{
 			border-top: unset;
 		}
@@ -48,21 +48,21 @@
 			border-bottom-left-radius: var(--bs-card-inner-border-radius);
 			border-bottom-right-radius: var(--bs-card-inner-border-radius);
 		}
-	
+
 		.map{
 			min-height: 414px;
 		}
 	}
-	
+
 	@include mobile(){
 		.card{
 			border: var(--bs-card-border-width) solid var(--bs-card-border-color);
 		}
-	
+
 		.card-header, .card-body{
 			border: unset;
 		}
-	
+
 		.card-header{
 			border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 		}
@@ -70,7 +70,7 @@
 			border-bottom-left-radius: unset;
 			border-bottom-right-radius: unset;
 		}
-	
+
 		.map{
 			min-height: 208px;
 		}

@@ -51,7 +51,13 @@
 }
 //end 
 
-//btn  
+//btn
+.button{
+    overflow: hidden;
+    border-radius: 6px;
+    max-width: 416px;
+}
+
 .btn{
     // background: $primary;
     color: $white;    
@@ -62,6 +68,17 @@
         padding: 6px 0;
         font-weight: 500;
     }
+
+    &-m{
+        width: 145px;
+        padding: 8px 0;
+        font-weight: 500;
+
+        @include mobile(){
+            width: 100%;
+        }
+    }
+
     &-l{
         width: 416px;
         font-weight: bold;

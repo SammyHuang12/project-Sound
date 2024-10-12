@@ -14,4 +14,52 @@
 	}
 
 }
+
+.excellent{
+	ul li{
+		position: relative;
+
+		&::before{
+			content:"\F633";
+			font-weight: 400;	
+			position: absolute;			
+			font-family: "bootstrap-icons";			
+			left:-2px;
+		}
+	}
+
+	.card{
+		background: unset;
+		
+		@include pad(){
+			box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+			overflow: hidden;
+		}
+	}
+
+}
+
+.statistics{
+	span{
+		position: relative;
+
+		&::after{
+			position: absolute;
+			content: '+';
+			// font-weight: 400;
+			// font-family: "bootstrap-icons";
+			font-size: 20px;
+			top:-2px;
+			// right:-10px;
+			// margin-top:-200px;
+		}
+	}
+}
+
+.customer{
+	img{
+		max-width: 170px;
+		display: block;
+	};
+}
   
