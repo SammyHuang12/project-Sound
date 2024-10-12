@@ -5,8 +5,8 @@
   	  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
   	  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   	  	<title>首頁 | Sound</title>
-  	  <script type="module" crossorigin src="/project-Sound/assets/main-811b30d4.js"></script>
-  	  <link rel="stylesheet" href="/project-Sound/assets/main-30902556.css">
+  	  <script type="module" crossorigin src="/project-Sound/assets/main-fe18b3e1.js"></script>
+  	  <link rel="stylesheet" href="/project-Sound/assets/main-36ba9209.css">
   	</head>
 	<body>
     <nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top">
@@ -62,7 +62,7 @@
   </nav>    <main>
 		<section class="home-banner position-relative">
 			<div class="position-absolute top-0 start-0 w-100 h-100 z-n1">
-				<div class="swiper w-100 h-100 ">
+				<div class="swiper banner-swiper w-100 h-100 ">
 					<div class="swiper-wrapper">
 						<!-- Slides -->
 						<div class="swiper-slide">
@@ -82,67 +82,169 @@
 				<h6 class="fs-16 fs-md-5 fs-lg-3 mb-1 mb-lg-2">The Best, But Not Necessarily The Largest</h6>
 			</div>			
 		</section>
-    	<section class="py-lg-80 py-40">
+    	<section class="py-lg-80 py-40 ">
 			<div class="container">
-				<h2 class="mb-lg-40 mb-32 fs-5 fs-md-1 text-center text-primary-dark">用專業的心，做專業的事</h2>
-				<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-32">
-					<div class="col">
-						<div class="card border-0 d-flex flex-column align-items-center">
-							<img src="data:image/png;base64,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" class="mb-8" alt="circle_1 logo">
-							<div class="card-body border-0">
-							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">效益</h4>
-							  <p class="card-text text-center fs-md-6 fs-16">協助客戶了解客層分布及消費習慣</p>
-							</div>
+			<h2 class="mb-lg-40 mb-32 fs-5 fs-md-1 text-center text-primary-dark">用專業的心，做專業的事</h2>
+			<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-32 ">
+				<div class="col">
+					<div class="card border-0 d-flex flex-column align-items-center h-100">
+						<img src="/project-Sound/assets/circle-1-1-461d8cdc.png" class="mb-8" alt="circle-1 logo">
+						<div class="card-body border-0">
+						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">效益</h4>
+						  <p class="card-text text-center fs-md-6 fs-16">協助客戶了解客層分布及消費習慣</p>
 						</div>
 					</div>
-					<div class="col">
-						<div class="card border-0 d-flex flex-column align-items-center">
-							<img src="data:image/png;base64,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" class="mb-8" alt="circle_2 logo">
-							<div class="card-body border-0">
-							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">及時</h4>
-							  <p class="card-text text-center fs-md-6 fs-16">在時限內提供專業的行銷研究</p>
-							</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 d-flex flex-column align-items-center h-100">
+						<img src="/project-Sound/assets/circle-2-1-286466f7.png" class="mb-8" alt="circle-2 logo">
+						<div class="card-body border-0">
+						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">及時</h4>
+						  <p class="card-text text-center fs-md-6 fs-16">在時限內提供專業的行銷研究</p>
 						</div>
 					</div>
-					<div class="col">
-						<div class="card border-0 d-flex flex-column align-items-center">
-							<img src="data:image/png;base64,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" class="mb-8" alt="circle_4 logo">
-							<div class="card-body border-0">
-							  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">保密</h4>
-							  <p class="card-text text-center fs-md-6 fs-16">以保密協議書保護該產品概念的商業價值</p>
-							</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 d-flex flex-column align-items-center h-100">
+						<img src="/project-Sound/assets/circle-3-1-bf9a69b7.png" class="mb-8" alt="circle-3 logo">
+						<div class="card-body border-0">
+						  <h4 class="card-title text-center fs-5 fs-md-4 mb-8">保密</h4>
+						  <p class="card-text text-center fs-md-6 fs-16">以保密協議書保護該產品概念的商業價值</p>
 						</div>
 					</div>
 				</div>
 			</div>
-    	</section>
-		<section class="py-lg-80 py-40 gradient">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="card">
-							<h2 class="mb-32 fs-5 fs-md-1 text-center text-primary-dark">商得優勢</h2>
-							<ul>
-								<li class="fs-5 fs-md-5">從產品市調到後續行銷一條龍服務</li>
-								<li class="fs-5 fs-md-5">跨領域研究經驗，包含醫藥、汽車產業等</li>
-								<li class="fs-5 fs-md-5">專業評估商品上市的可行性及其商業價值</li>
-								<li class="fs-5 fs-md-5">有效鎖定目標客層</li>
-								<li class="fs-5 fs-md-5">保密且專業的問卷調查</li>
-								<li class="fs-5 fs-md-5">實際訪問並紀錄潛在客戶的使用狀況及心得</li>
+			</div>
+    	</section>		
+		<section class="py-lg-80 py-40 excellent gradient">
+			<div class="container position-relative">
+				<h2 class="mb-32 fs-5 fs-md-1 text-center text-primary-dark">商得優勢</h2>
+				<div class="card rounded-12 rounded-md-0 border-0">
+					<div class="row g-0">
+					  <div class="col-lg-6">
+						<img src="/project-Sound/assets/sound-00584ab0.png" class="img-fluid ms-xxl-80 ms-xl-40 h-lg-100 h-xl-auto" alt="sound office">
+					  </div>
+					  <div class="col-lg-6">
+						<div class="card-body p-md-32 p-16 bg-white mt-xxl-80 mt-xl-40 me-xxl-80 me-xl-40 shadow d-md-flex flex-column">
+							<ul class="list-unstyled mb-auto">
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">從產品市調到後續行銷一條龍服務</li>
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">跨領域研究經驗，包含醫藥、汽車產業等</li>
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">專業評估商品上市的可行性及其商業價值</li>
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">有效鎖定目標客層</li>
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">保密且專業的問卷調查</li>
+								<li class="fs-16 fs-md-6 fs-xl-5 ps-32 mb-8">實際訪問並紀錄潛在客戶的使用狀況及心得</li>
 							</ul>
-							<div class="button mx-auto mt-32">
-								<a href="about.html" class="btn btn-m btn-primary blow-up blow-up-m mx-auto">確認送出</a>
+							<div class="button mx-auto mt-20">
+								<a href="about.html" class="btn btn-m btn-primary blow-up blow-up-m mx-auto">了解更多</a>
 							</div>
 						</div>
+					  </div>
 					</div>
+				</div>
+				<!-- <div class="row row-cols-md-2 row-cols-1">
 					<div class="col">
-						<picture class="h-100">
-							<source media="(min-width: 992px)" srcset="/project-Sound/assets/sound-53f16b9a.webp ">
-							<img src="/project-Sound/assets/sound-53f16b9a.webp" alt="contact-banner logo" class="w-100">
+						<picture class="position-md-absolute position-static start-md-5">
+							<source media="(min-width: 992px)" srcset="../assets/images/sound.png">
+							<img src="../assets/images/sound.png" alt="contact-banner logo" class="w-60">
 						</picture>
 					</div>
+					<div class="col">
+						<div class="card px-md-48 py-md-32 p-16 shadow border-0 rounded-0 position-md-absolute position-static end-md-5 bottom-40 d-block d-md-flex">							
+							<ul class="list-unstyled mb-8">
+								<li class="fs-16 fs-md-5 ps-32 mb-8">從產品市調到後續行銷一條龍服務</li>
+								<li class="fs-16 fs-md-5 ps-32 mb-8">跨領域研究經驗，包含醫藥、汽車產業等</li>
+								<li class="fs-16 fs-md-5 ps-32 mb-8">專業評估商品上市的可行性及其商業價值</li>
+								<li class="fs-16 fs-md-5 ps-32 mb-8">有效鎖定目標客層</li>
+								<li class="fs-16 fs-md-5 ps-32 mb-8">保密且專業的問卷調查</li>
+								<li class="fs-16 fs-md-5 ps-32 mb-8">實際訪問並紀錄潛在客戶的使用狀況及心得</li>
+							</ul>
+							<div class="button mx-auto">
+								<a href="about.html" class="btn btn-m btn-primary blow-up blow-up-m mx-auto">了解更多</a>
+							</div>
+						</div>
+					</div>				
+				</div>			 -->
+		</section>
+		<section class="py-lg-80 py-40 container statistics">
+			<div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-24 justify-content-center">
+					<div class="col">
+						<div class="card shadow border-0 rounded-20">
+							<div class="card-body mx-auto p-24">
+								<h5 class="card-title text-break text-primary fs-lg-6 fs-14"><span class="fs-lg-2 fs-3 ">25</span>&nbsp;&nbsp;/&nbsp; 年</h5>
+								<p class="card-text fs-lg-6 fs-14">研究經驗</p>
+							</div>							
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow border-0 rounded-20">
+							<div class="card-body mx-auto p-24">
+								<h5 class="card-title text-break text-primary fs-lg-6 fs-14"><span class="fs-lg-2 fs-3 ">2000</span>&nbsp;&nbsp;件</h5>
+								<p class="card-text fs-lg-6 fs-14">專案執行</p>
+							</div>							
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow border-0 rounded-20">
+							<div class="card-body mx-auto p-24">
+							  	<h5 class="card-title text-break text-primary fs-lg-6 fs-14"><span class="fs-lg-2 fs-3 ">100</span>&nbsp;&nbsp;位</h5>
+							  	<p class="card-text fs-lg-6 fs-14">專業督導/訪員</p>
+							</div>							
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow border-0 rounded-20">
+							<div class="card-body mx-auto p-24">
+							  	<h5 class="card-title text-break text-primary fs-lg-6 fs-14"><span class="fs-lg-2 fs-3 ">50</span>&nbsp;&nbsp;家</h5>
+							  	<p class="card-text fs-lg-6 fs-14">合作客戶</p>
+							</div>							
+						</div>
+					</div>
 				</div>
 			</div>
+		</section>
+		<section class="py-lg-80 py-40 container customer">
+			<!-- <h2 class="mb-32 fs-5 fs-md-1 text-center text-primary-dark">合作案例</h2> -->
+			<div class="swiper customer-swiper w-100 h-100">		
+				<div class="swiper-wrapper d-flex align-items-center">
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-1-2415b41b.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-2-537d8fbe.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-3-12b35014.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-4-95f8cd5d.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-5-5cfe091e.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-6-108cf743.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-7-046001e7.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-8-4a890540.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-9-c03bb0db.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-10-503758f3.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-11-926686c9.jpg" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+					<div class="swiper-slide d-flex justify-content-center align-items-center">
+						<img src="/project-Sound/assets/cus-12-e100c066.png" alt="customer logo" class="object-fit-cover p-12 w-100">
+					</div>
+				</div>			
+			</div>
+			
 			
 		</section>
 
