@@ -32,7 +32,7 @@ const bannerSwiper = new Swiper('.banner-swiper', {
 const coustomerSwiper = new Swiper('.customer-swiper', {
     // Optional parameters
     direction: 'horizontal',
-    speed: 2000,
+    speed: 800,
     loop: true,
 
     autoplay: {
@@ -58,3 +58,83 @@ const coustomerSwiper = new Swiper('.customer-swiper', {
   	},
 
 });
+
+const statistics 	= document.querySelector(".statistics");
+const yearSum 		= document.querySelector(".yearSum");			//25
+const caseSum 		= document.querySelector(".caseSum");			//2000
+const supervisorSum = document.querySelector(".supervisorSum");		//100
+const customerSum 	= document.querySelector(".customerSum");		//50
+
+const obj  = { value: 0 };
+const obj2 = { value: 0 };
+const obj3 = { value: 0 };
+const obj4 = { value: 0 };
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(obj, 2.5, {
+    value: 25, ease: Power0.easeIn,
+    roundProps: {
+        value: 1
+    },
+    scrollTrigger: {
+        trigger: yearSum,
+		markers:false,
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "restart none none none"
+    },
+    onUpdate: function () {
+        yearSum.innerHTML = obj.value;
+    }
+})
+
+gsap.to(obj2, 2.5, {
+    value: 2000, ease: Power0.easeIn,
+    roundProps: {
+        value: 1
+    },
+    scrollTrigger: {
+        trigger: caseSum,
+		markers:false,
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "restart none none none"
+    },
+    onUpdate: function () {
+        caseSum.innerHTML = obj2.value;
+    }
+})
+gsap.to(obj3, 2.5, {
+    value: 100, ease: Power0.easeIn,
+    roundProps: {
+        value: 1
+    },
+    scrollTrigger: {
+        trigger: supervisorSum,
+		markers:false,
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "restart none none none"
+    },
+    onUpdate: function () {
+        supervisorSum.innerHTML = obj3.value;
+    }
+})
+gsap.to(obj4, 2.5, {
+    value: 50, ease: Power0.easeIn,
+    roundProps: {
+        value: 1
+    },
+    scrollTrigger: {
+        trigger: customerSum,
+		markers:false,
+        start: "top 50%",
+        end: "bottom 50%",
+        toggleActions: "restart none none none"
+    },
+    onUpdate: function () {
+        customerSum.innerHTML = obj4.value;
+    }
+})
