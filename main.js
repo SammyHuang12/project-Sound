@@ -79,7 +79,7 @@ gsap.to(obj, 2.5, {
         value: 1
     },
     scrollTrigger: {
-        trigger: yearSum,
+        trigger: statistics,
 		markers:false,
         start: "top 50%",
         end: "bottom 50%",
@@ -96,7 +96,7 @@ gsap.to(obj2, 2.5, {
         value: 1
     },
     scrollTrigger: {
-        trigger: caseSum,
+        trigger: statistics,
 		markers:false,
         start: "top 50%",
         end: "bottom 50%",
@@ -112,7 +112,7 @@ gsap.to(obj3, 2.5, {
         value: 1
     },
     scrollTrigger: {
-        trigger: supervisorSum,
+        trigger: statistics,
 		markers:false,
         start: "top 50%",
         end: "bottom 50%",
@@ -128,7 +128,7 @@ gsap.to(obj4, 2.5, {
         value: 1
     },
     scrollTrigger: {
-        trigger: customerSum,
+        trigger: statistics,
 		markers:false,
         start: "top 50%",
         end: "bottom 50%",

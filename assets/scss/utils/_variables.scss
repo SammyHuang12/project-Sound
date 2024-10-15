@@ -727,6 +727,7 @@ $h6-font-size:                $font-size-base * 1.25 !default;    //20
 $t16-font-size:               $font-size-base !default;           //16
 $s14-font-size:               $font-size-base * 0.875!default;    //14
 $t12-font-size:               $font-size-base * 0.75!default;     //12
+$t18-font-size:               $font-size-base * 1.125!default;    //18
 $t64-font-size:               $font-size-base * 4 !default;       //64
 //end 自訂
 
@@ -743,6 +744,7 @@ $font-sizes: (
   16: $t16-font-size,
   14: $s14-font-size,
   12: $t12-font-size,
+  18: $t18-font-size,
   64: $t64-font-size,
   //end 自訂
 ) !default;
