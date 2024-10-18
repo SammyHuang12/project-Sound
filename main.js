@@ -39,21 +39,23 @@ const coustomerSwiper = new Swiper('.customer-swiper', {
         delay: 3000,
     },
   
-    spaceBetween: 32,
+    spaceBetween: 20,
   	slidesPerView: 2,
 
   	breakpoints: {
   	  	576: {
-  	  	  //當螢幕寬度大於等於576
-  	  	  slidesPerView: 2,
+  	  	    //當螢幕寬度大於等於576
+  	  	    slidesPerView: 2,
   	  	},
   	  	992: {
-  	  	  //當螢幕寬度大於等於992
-  	  	  slidesPerView: 4,
+  	  	    //當螢幕寬度大於等於992
+  	  	    slidesPerView: 4,
+            spaceBetween: 30,
   	  	},
   	  	1200: {
   	  	  //當螢幕寬度大於等於1200
-  	  	  slidesPerView: 6,
+  	  	    slidesPerView: 6,
+            spaceBetween: 30,
   	  	},
   	},
 
